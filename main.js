@@ -1,6 +1,5 @@
 // let word;
 // word=prompt("inserisci una parola");
-// let rev=word.split('').reverse().join('');
 // function pali(parola){
 //     let rev=parola.split('').reverse().join('');
 //     console.log(rev);
