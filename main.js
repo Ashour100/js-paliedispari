@@ -13,7 +13,7 @@
 // else
 //     alert("la parola non è palindroma");
 
-
+let userchoice=parseInt(prompt("Scegli \n1-Pari \n2-dispari"));
 
 
 let userNum=parseInt(prompt("inserisci un numero tra 1 e 5"));
@@ -33,15 +33,17 @@ function sommaPari(num1,num2){
 
     return false;
 }
-
-if(sommaPari(userNum,random()))
+let ris;
+if(sommaPari(userNum,random())){
     alert("La somma è pari");
-else
-    alert("La somma è dispari");
-
-
-if(userNum>random()){
-    alert("Ha vinto il user");
+    ris=1;
 }
+else{
+    alert("La somma è dispari");
+    ris=2;
+}
+if(userchoice==ris)
+    alert("Ha vinto il user");
+
 else
     alert("Ha vinto il Computer");
